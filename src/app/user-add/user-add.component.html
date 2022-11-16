@@ -1,0 +1,35 @@
+<form>
+<div class="form-group">
+        <label for="exampleFormControlInput1">firstName</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="firstName"[(ngModel)]="user.firstName"  placeholder="texte">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">lastName</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="lastName"[(ngModel)]="user.lastName"  placeholder="texte">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Addresse</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="Addresse"[(ngModel)]="user.Addresse"  placeholder="texte">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">mail</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail"[(ngModel)]="user.mail"  placeholder="texte">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">BirthDate</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="BirthDate"[(ngModel)]="user.BirthDate"  placeholder="texte">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">role</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="role" [(ngModel)]="user.role">
+          <option>LAWYER</option>
+          <option>PSYCHOTIRAPIST</option>
+          <option>FORMER</option>
+          <option>ADMIN</option>
+          <option>DONOR</option>
+          <option>ASSOCIATION</option>
+        </select>
+      </div>
+      <button (click)="addUser()" type="button" class="btn btn-primary m-t-15 waves-effect">Add</button>
+
+    </form>

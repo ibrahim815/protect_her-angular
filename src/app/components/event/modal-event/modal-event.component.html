@@ -1,0 +1,22 @@
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Date</label>
+      <input type="date" class="form-control" id="exampleFormControlInput1"  name="eventDate" [(ngModel)]="event.eventDate"  placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">DonationType</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="select" [(ngModel)]="event.donationtype">
+        <option>MONEY</option>
+        <option>OBJECT</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Concept</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name="concept"[(ngModel)]="event.concept"  placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Capacité</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name="capacite" [(ngModel)]="event.capacite"  placeholder="name@example.com">
+      </div>
+      <button mat-button color="primary" name="button" (click)="addEvent()">{{A}}</button>
+    </form>

@@ -1,0 +1,12 @@
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Date</label>
+      <input type="date" class="form-control" id="exampleFormControlInput1"  name="advertisingDate" [(ngModel)]="advertising.advertisingDate"  placeholder="name@example.com">
+    </div>
+   
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Description</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name="description"[(ngModel)]="advertising.description"  placeholder="name@example.com">
+      </div>
+      <button mat-button color="primary" name="button" (click)="addAdvertising()">{{A}}</button>
+    </form>
